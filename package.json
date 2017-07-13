@@ -1,0 +1,23 @@
+{
+  "name": "markdown-previewer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run sass-watch\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "sass-watch": "sass --watch scss:src"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "eslint": "^4.2.0",
+    "eslint-plugin-react": "^7.1.0",
+    "react-bootstrap": "^0.31.0"
+  }
+}
