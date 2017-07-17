@@ -1,10 +1,10 @@
-$text: #0fa0d5;
 $placeholder-text: #848282;
 
-.App-intro {
-	color: $text;
+.App {
+	margin-top: 10px;
 }
 
+/* --- change textarea's text color --- */
 textarea::-webkit-input-placeholder {
 	color: $placeholder-text !important;
 }
@@ -21,6 +21,41 @@ textarea:-ms-input-placeholder {
 	color: $placeholder-text !important;
 }
 
-.previewer-placeholder {
-	color: $placeholder-text;
+/* --- add some space between tab title and its content --- */
+.nav-tabs {
+	margin-bottom: 10px;
+}
+
+/* --- preview tab --- */
+#preview-tab {
+	table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+
+		th {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: center;
+		}
+
+		td {
+	    border: 1px solid #ddd;	    
+	    padding: 10px;
+	    text-align: left;
+		}
+	}	
+
+	.previewer-placeholder {
+		color: $placeholder-text;
+	}
+} 
+
+/* --- settings for smaller view --- */
+@media screen and (max-width: 767px) {
+	#uncontrolled-tabs{
+		a {
+			padding-left: 13.5px;
+			padding-right: 13.5px;
+		}	
+	}
 }

@@ -10,7 +10,7 @@ import rawCheatSheet from './rawCheatSheet';
 
 //var marked = require('marked');
 
-class ControlledTabs extends Component {
+class MainTabs extends Component {
 	constructor(props) {
 		super(props);
 
@@ -46,7 +46,7 @@ class ControlledTabs extends Component {
 							<CheatSheetTab dangerouslySetInnerHTML={ this.getMarkdownText(rawCheatSheet) }/>
 						</Tab>
 
-						<Tab eventKey={3} title="Previewer">
+						<Tab eventKey={3} title="Preview">
 							<PreviewTab dangerouslySetInnerHTML={ this.getMarkdownText(this.state.input) } />
 						</Tab>						
 					</Tabs>
@@ -65,8 +65,8 @@ class ControlledTabs extends Component {
 							</Tab>						
 						</Tabs>
 
-						<Tabs className="col-md-5 col-sm-6 text-left" id="preview-tab">
-							<Tab eventKey={3} title="Previewer">
+						<Tabs className="col-md-5 col-sm-6 text-left" id="preview-tab-pane">
+							<Tab eventKey={3} title="Preview">
 								<PreviewTab dangerouslySetInnerHTML={ this.getMarkdownText(this.state.input) } />
 							</Tab>   
 						</Tabs>
@@ -77,4 +77,4 @@ class ControlledTabs extends Component {
 	}
 }
 
-export default ControlledTabs;
+export default MainTabs;

@@ -1,6 +1,7 @@
-.App-intro {
-  color: #0fa0d5; }
+.App {
+  margin-top: 10px; }
 
+/* --- change textarea's text color --- */
 textarea::-webkit-input-placeholder {
   color: #848282 !important; }
 
@@ -15,7 +16,29 @@ textarea::-moz-placeholder {
 textarea:-ms-input-placeholder {
   color: #848282 !important; }
 
-.previewer-placeholder {
+/* --- add some space between tab title and its content --- */
+.nav-tabs {
+  margin-bottom: 10px; }
+
+/* --- preview tab --- */
+#preview-tab table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse; }
+  #preview-tab table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center; }
+  #preview-tab table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left; }
+#preview-tab .previewer-placeholder {
   color: #848282; }
+
+/* --- settings for smaller view --- */
+@media screen and (max-width: 767px) {
+  #uncontrolled-tabs a {
+    padding-left: 13.5px;
+    padding-right: 13.5px; } }
 
 /*# sourceMappingURL=index.css.map */

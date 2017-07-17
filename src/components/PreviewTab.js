@@ -6,15 +6,13 @@ const PreviewTab = (props) => {
 	const convertedHTML = props.dangerouslySetInnerHTML;
 
 	return (
-		<div>
+		<div id="preview-tab">
 			{
 				convertedHTML.__html !== '' ?
 					<div dangerouslySetInnerHTML={convertedHTML} /> :
 					<p className="previewer-placeholder">and see the result here.</p>
 			}
-		</div>
-
-		
+		</div>	
 		
 	);
 };
