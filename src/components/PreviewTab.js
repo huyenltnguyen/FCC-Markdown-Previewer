@@ -1,42 +1,21 @@
 // jshint ignore: start
 import React from 'react';
-//import { Tabs, Tab } from 'react-bootstrap';
-import markdownConverter from '../markdownConverter';
+import { Tab, Tabs } from 'react-bootstrap';
 
 const PreviewTab = (props) => {
-	const input = props.input;
-
-	const convertedInput = markdownConverter(input);
+	const convertedHTML = props.dangerouslySetInnerHTML;
 
 	return (
-		<div className="text-left">
-			{ convertedInput }
-
-			{/*
-			<p id="previewer" className="text-left">
-				
-			</p>
-			*/}
-			
-
-			{/*}
-				<Tabs id="preview-tab" className="col-md-6">
-					<Tab title="Previewer" disabled>
-						<div className="form-group">
-							<label htmlFor="Preview">Preview</label> 
-							<textarea
-								className="form-control"
-								rows="5"
-								placeholder="And see the preview here"				
-								id="previewer">
-							</textarea>
-						</div>
-					</Tab>
-				</Tabs>
-			*/}
+		<div>
+			{
+				convertedHTML.__html !== '' ?
+					<div dangerouslySetInnerHTML={convertedHTML} /> :
+					<p className="previewer-placeholder">and see the result here.</p>
+			}
 		</div>
 
-
+		
+		
 	);
 };
 

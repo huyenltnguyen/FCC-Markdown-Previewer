@@ -12,8 +12,7 @@ class EditorTab extends Component {
 		const updateInput = this.props.updateInput;
 
 		return (
-			<div className="form-group">
-				{ /* <label htmlFor="editor">Editor</label> */}
+			<div className="form-group text-left">
 				<textarea
 					className="form-control"
 					rows="20" id="editor"

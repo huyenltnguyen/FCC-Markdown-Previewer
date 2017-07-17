@@ -1,5 +1,26 @@
 $text: #0fa0d5;
+$placeholder-text: #848282;
 
 .App-intro {
 	color: $text;
+}
+
+textarea::-webkit-input-placeholder {
+	color: $placeholder-text !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+	color: $placeholder-text !important;  
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+	color: $placeholder-text !important;  
+}
+
+textarea:-ms-input-placeholder {  
+	color: $placeholder-text !important;
+}
+
+.previewer-placeholder {
+	color: $placeholder-text;
 }

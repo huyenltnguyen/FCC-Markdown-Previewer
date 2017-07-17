@@ -18,6 +18,8 @@
     "concurrently": "^3.5.0",
     "eslint": "^4.2.0",
     "eslint-plugin-react": "^7.1.0",
-    "react-bootstrap": "^0.31.0"
+    "marked": "^0.3.6",
+    "react-bootstrap": "^0.31.0",
+    "react-media": "^1.6.1"
   }
 }

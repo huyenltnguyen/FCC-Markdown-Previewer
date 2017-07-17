@@ -1,4 +1,21 @@
 .App-intro {
   color: #0fa0d5; }
 
+textarea::-webkit-input-placeholder {
+  color: #848282 !important; }
+
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #848282 !important; }
+
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #848282 !important; }
+
+textarea:-ms-input-placeholder {
+  color: #848282 !important; }
+
+.previewer-placeholder {
+  color: #848282; }
+
 /*# sourceMappingURL=index.css.map */
