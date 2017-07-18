@@ -1,6 +1,5 @@
 // jshint ignore: start
 import React from 'react';
-import { Tab, Tabs } from 'react-bootstrap';
 
 const PreviewTab = (props) => {
 	const convertedHTML = props.dangerouslySetInnerHTML;
